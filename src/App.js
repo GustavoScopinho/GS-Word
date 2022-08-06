@@ -48,13 +48,13 @@ function App() {
 
   //starts the secret word game
   const startGame = useCallback(() => {
-    // clear all letters
+    // clear all letters //
     clearLetterStates()
 
-    // pick word and pick category
+    // pick word and pick category //
     const { word, category } = pickWordAndCategory()
 
-    // create an array of letters
+    // create an array of letters /
     let wordLetters = word.split('')
 
     wordLetters = wordLetters.map(l => l.toLowerCase())
@@ -128,7 +128,6 @@ function App() {
   const retry = () => {
     setScore(0)
     setGuesses(guessesQty)
-
     setGameStage(stages[0].name)
   }
 

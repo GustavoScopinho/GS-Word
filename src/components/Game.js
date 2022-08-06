@@ -1,6 +1,8 @@
 import { useState, useRef } from 'react'
 import './Game.css'
 
+import Logo from '../assets/gu1.png'
+
 const Game = ({
   verifyLetter,
   pickedWord,
@@ -26,6 +28,9 @@ const Game = ({
 
   return (
     <div className="game">
+      <div>
+        <img className="logo_gu" src={Logo} />
+      </div>
       <p className="points">
         <span>Pontuação: {score}</span>
       </p>
